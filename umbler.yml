@@ -1,0 +1,15 @@
+name: PHP
+author: Umbler
+logo_url: https://design.umbler.com//assets/svg/sprite-logos.svg#php
+version: 7.3
+description: "PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML."
+short_description: "PHP is a popular general-purpose scripting language that is especially suited to web development"
+stack: php
+pack: "**/*.*"
+dest: /public
+
+env:
+  php_extensions: "gd mysql mysqli opcache pdo_mysql soap"
+
+build_pipeline:
+  - printenv
